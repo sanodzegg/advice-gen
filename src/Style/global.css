@@ -1,2 +1,126 @@
-@import url("./_style.scss");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
+body {
+  min-height: 100vh;
+  overflow: hidden;
+  background-color: #212732;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.advice-wrapper {
+  background-color: #323a49;
+  position: relative;
+  padding: 20px;
+  border-radius: 20px;
+  width: 500px;
+  max-width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 800;
+  -webkit-box-shadow: 0px 0px 10px #1f2632;
+          box-shadow: 0px 0px 10px #1f2632;
+}
+
+@media screen and (max-width: 575px) {
+  .advice-wrapper {
+    width: 86.957vw;
+  }
+}
+
+.advice-wrapper span {
+  color: #53FEAA;
+  margin: 15px 0 0 0;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.advice-wrapper p {
+  display: inline-block;
+  margin: 30px 0;
+  color: #cee3e9;
+  font-size: 28px;
+  width: 75%;
+  text-align: center;
+}
+
+@media screen and (max-width: 575px) {
+  .advice-wrapper p {
+    width: 90%;
+  }
+}
+
+.advice-wrapper svg {
+  margin-bottom: 40px;
+}
+
+@media screen and (max-width: 575px) {
+  .advice-wrapper svg {
+    width: 76.957vw;
+  }
+}
+
+.advice-wrapper .dice-ph {
+  background-color: #53FEAA;
+  border-radius: 50%;
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  bottom: -11%;
+  cursor: pointer;
+}
+
+.advice-wrapper .dice-ph svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: unset;
+  margin: unset;
+}
+
+.advice-wrapper .dice-ph:hover {
+  -webkit-animation: rotation .5s;
+          animation: rotation .5s;
+  -webkit-box-shadow: 0 0 10px #53FEAA;
+          box-shadow: 0 0 10px #53FEAA;
+}
+
+@-webkit-keyframes rotation {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotation {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
 /*# sourceMappingURL=global.css.map */

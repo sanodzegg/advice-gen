@@ -1,3 +1,78 @@
-div {
-    background-color: red;
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+body {
+    min-height: 100vh;
+    overflow: hidden;
+    background-color: #212732;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.advice-wrapper {
+    background-color: #323a49;
+    position: relative;
+    padding: 20px;
+    border-radius: 20px;
+    width: 500px;
+    max-width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    font-family: 'Manrope', sans-serif;
+    font-weight: 800;
+    box-shadow: 0px 0px 10px #1f2632;
+    @media screen and (max-width: 575px) {
+        width: 86.957vw;
+    }
+
+    span {
+        color: #53FEAA;
+        margin: 15px 0 0 0;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+    }
+    p {
+        display: inline-block;
+        margin: 30px 0;
+        color: #cee3e9;
+        font-size: 28px;
+        width: 75%;
+        text-align: center;
+        @media screen and (max-width: 575px) {
+            width: 90%;
+        }
+    }
+
+    svg {
+        margin-bottom: 40px;
+        @media screen and (max-width: 575px) {
+            width: 76.957vw;
+        }
+    }
+
+    .dice-ph {
+        background-color: #53FEAA;
+        border-radius: 50%;
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        bottom: -11%;
+        cursor: pointer;
+
+        svg {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: unset;
+            margin: unset;
+        }
+    }
+    .dice-ph:hover {
+        animation: rotation .5s;
+        box-shadow: 0 0 10px #53FEAA;
+    }
 }
